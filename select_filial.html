@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Selecionar Filial</title>
+</head>
+<body>
+  <h2>🏪 Selecione a Filial</h2>
+  <form action="/processar" method="post">
+    <select name="filial" required>
+      {% for f in filiais %}
+        <option value="{{ f }}">{{ f }}</option>
+      {% endfor %}
+    </select>
+    <button type="submit">Processar Dados</button>
+  </form>
+</body>
+</html>

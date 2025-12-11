@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Processador de Pedidos GIGA</title>
+</head>
+<body>
+  <h2>📤 Envie suas planilhas</h2>
+  <form action="/upload" method="post" enctype="multipart/form-data">
+    <label>Planilha de Estoque:</label><br>
+    <input type="file" name="estoque" accept=".xlsx" required><br><br>
+    <label>Planilha de Pedidos:</label><br>
+    <input type="file" name="pedidos" accept=".xlsx" required><br><br>
+    <button type="submit">Enviar Planilhas</button>
+  </form>
+</body>
+</html>
