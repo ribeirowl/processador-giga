@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Resultados - {{ filial }}</title>
+</head>
+<body>
+  <h2>📋 Resultados para a filial: {{ filial }}</h2>
+
+  <h3>🏬 Estoque Atual</h3>
+  <a href="/download/estoque" target="_blank">⬇️ Baixar Excel</a>
+  {{ estoque|safe }}
+
+  <h3>🔄 Transferências Possíveis</h3>
+  <a href="/download/transferencias" target="_blank">⬇️ Baixar Excel</a>
+  {{ transferencias|safe }}
+
+  <h3>🛒 Itens a Comprar</h3>
+  <a href="/download/compras" target="_blank">⬇️ Baixar Excel</a>
+  {{ compras|safe }}
+</body>
+</html>
